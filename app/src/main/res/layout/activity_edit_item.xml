@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditItemActivity">
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="122dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="244dp"
+        android:layout_marginStart="18dp"
+        android:onClick="onAddItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="172dp"
+        tools:text="@string/save_btn" />
+
+    <EditText
+        android:id="@+id/editItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:ems="10"
+        android:hint="@string/edit_item_textbox"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/featureTitle"
+        android:layout_width="136dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/edit_Item_Below"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:autoSizeMaxTextSize="@android:dimen/dialog_min_width_minor"
+        app:layout_constraintBottom_toTopOf="@+id/editItemText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
