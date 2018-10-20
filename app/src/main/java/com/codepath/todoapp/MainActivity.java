@@ -50,12 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void openEditItemActivity(){
         //First parameter is context, second is class of the second activity
-        Intent i = new Intent(this, EditItemActivity.class);
+        Intent i = new Intent(MainActivity.this, EditItemActivity.class);
         //Putting "Extras"
         i.putExtra("itemName","position");
+         i.putExtra("username", "foobar");
+
+
         startActivity(i);
     }
-
 
 
     public void populateArrayItems(){
@@ -89,7 +91,5 @@ public class MainActivity extends AppCompatActivity {
         etEditText.setText("");
         writeItems();
     }
-
-
 
 }

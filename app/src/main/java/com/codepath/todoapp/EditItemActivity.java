@@ -18,9 +18,12 @@ public class EditItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item);
 
-        String text = getIntent().getStringExtra("itemName");
+        String itemName = getIntent().getStringExtra("itemName");
         int position = getIntent().getIntExtra("position", 0);
+    }
 
+    public void onSubmit (View v){
+        this.finish();
     }
 
 
