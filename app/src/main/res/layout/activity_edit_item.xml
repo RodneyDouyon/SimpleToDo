@@ -43,7 +43,6 @@
         android:layout_marginTop="10dp"
         android:text="@string/edit_Item_Below"
         android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        app:autoSizeMaxTextSize="@android:dimen/dialog_min_width_minor"
         app:layout_constraintBottom_toTopOf="@+id/editItemText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

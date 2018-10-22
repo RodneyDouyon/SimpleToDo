@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,8 @@ public class EditItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item);
 
+        TextView myTextView;
+        myTextView = findViewById(R.id.featureTitle);
         String itemName = getIntent().getStringExtra("itemName");
         int position = getIntent().getIntExtra("position", 0);
     }

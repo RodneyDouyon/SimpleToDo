@@ -52,11 +52,10 @@ public class MainActivity extends AppCompatActivity {
         //First parameter is context, second is class of the second activity
         Intent i = new Intent(MainActivity.this, EditItemActivity.class);
         //Putting "Extras"
-        i.putExtra("itemName","position");
-         i.putExtra("username", "foobar");
+       i.putExtra("itemName","position");
+       i.putExtra("username", "foobar");
 
-
-        startActivity(i);
+       startActivity(i);
     }
 
 
