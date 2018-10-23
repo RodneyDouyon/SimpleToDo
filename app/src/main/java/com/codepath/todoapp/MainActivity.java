@@ -1,5 +1,6 @@
 package com.codepath.todoapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.apache.commons.io.FileUtils;
 
@@ -52,12 +54,28 @@ public class MainActivity extends AppCompatActivity {
         //First parameter is context, second is class of the second activity
         Intent i = new Intent(MainActivity.this, EditItemActivity.class);
         //Putting "Extras"
-       i.putExtra("itemName","position");
-       i.putExtra("username", "foobar");
-
+       i.putExtra("lvItems","editItemText");
        startActivity(i);
     }
 
+    private final int REQUEST_CODE = 20;
+    //Launching activity for a result.
+    public  void onClick (View view){
+        Intent i = new Intent(MainActivity.this, EditItemActivity.class);
+        i.putExtra("mode", 2);//This passes data to launched activity.
+        startActivityForResult(i,REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult (int requestCode, int resultCode,Intent data){
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
+            //Extracting Name value from result extras
+            String name = data.getExtras().getString("name");
+            int code = data.getExtras().getInt("code", 0);
+            //Temporary display of name on screen by using toast.
+            Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public void populateArrayItems(){
         todoItems = new ArrayList<String>();
