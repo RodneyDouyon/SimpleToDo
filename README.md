@@ -1,34 +1,49 @@
-# Pre-work - ToDoApp
+# Project 1 - *Simple ToDo*
 
-ToDoApp is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**ToDoApp** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
 
-Submitted by: Rodney Douyon
+Submitted by: **Rodney Douyon**
 
-Time spent: 8 hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-* [ ] User can **successfully add and remove items** from the todo list
+* [*] User can **view a list of todo items**
+* [*] User can **successfully add and remove items** from the todo list
+* [ ] User's **list of items persisted** upon modification and and retrieved properly on app restart
 
-As part of your pre-work submission, please reflect on the app and answer the following questions below:
+The following **optional** features are implemented:
 
-**Question 1:** "What are your reactions to the Android app development platform so far? Compare and contrast Android's approach to layouts and user interfaces in past platforms you've used."
+* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list
 
-**Answer:** [Enter your answer here in a paragraph or two].
+The following **additional** features are implemented:
 
-**Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`."
+* [ ] List anything else that you can get done to improve the app functionality!
+		
+		-Troubleshoot the modification of existing items when the data passes from the first activity to the second and back
+		-Modify the items so that they can be sorted by order of priority (for instance, items on the list could be color coded).
+		-Add date and time to the items.
+		-And lastly a space to add additional or detailed notes about each item when it is launched in a new activity.
+		
+## Video Walkthrough
 
-**Answer:** [Enter your answer here in a paragraph or two].
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/R8ORfDw.gifv' title='Video Walkthrough of ToDoApp' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+ Some of the cliff notes instructions were somewhat confusing when indicating when it is appropriate to use IDs.
+
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Rodney Douyon]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
