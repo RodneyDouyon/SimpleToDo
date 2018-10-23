@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     //Launching activity for a result.
     public  void onClick (View view){
         Intent i = new Intent(MainActivity.this, EditItemActivity.class);
-        i.putExtra("mode", 2);//This passes data to launched activity.
+        i.putExtra("mode", 2);//This passes data to second activity.
         startActivityForResult(i,REQUEST_CODE);
     }
 
