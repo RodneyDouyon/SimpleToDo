@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             //Extracting Name value from result extras
             String name = data.getExtras().getString("name");
             int code = data.getExtras().getInt("code", 0);
-            //Temporary display of name on screen by using toast.
+            //Temporary display of name on screen by using toast...
             Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
         }
     }
